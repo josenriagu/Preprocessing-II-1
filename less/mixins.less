@@ -1,1 +1,18 @@
 // Mixins in here
+.buttons(@borderColor; @background; @color;) {
+  border: 0.1rem solid @borderColor;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  background: @background;
+  width: 85%;
+  text-align: center;
+  font-size: 1.6rem;
+  color: @color;
+  font-weight: bold;
+}
+
+.setWidth(@maxWidth; @width; @margin) {
+  max-width: @maxWidth;
+  width: @width;
+  margin: @margin;
+}
