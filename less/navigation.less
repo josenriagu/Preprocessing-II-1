@@ -2,11 +2,17 @@
 header {
   border-bottom: 2px dashed silver;
   .navigation {
-  .setWidth(800px; 100%; 0 auto;);
+    .setWidth(800px; 100%; 0 auto;);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding: 2rem 0;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+    }
     .header-logo {
       h2 {
         padding-bottom: 0;
@@ -16,6 +22,10 @@ header {
       width: 45%;
       display: flex;
       justify-content: space-around;
+      @media @mobile {
+         width: 100%;
+         margin-top: 1rem;
+      }
       a {
         text-decoration: none;
         color: black;
